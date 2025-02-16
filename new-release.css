@@ -1,0 +1,44 @@
+/* Common styles from home test.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url(pexels-kseniachernaya-3952071.jpg);
+    background-size: cover;
+    color: #ffffff;
+    min-height: 100vh;
+    padding-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Button styles for Add to Cart */
+.book-item button {
+    background: linear-gradient(135deg, #ff6b6b, #ff9f43);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+
+.book-item button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+}
+
+/* Additional styles for the grid layout */
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin: 40px 20px;
+    padding: 20px;
+    justify-items: center;
+}
